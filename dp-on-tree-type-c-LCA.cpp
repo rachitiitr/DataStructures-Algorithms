@@ -65,7 +65,7 @@ int lca(int u, int v){
 
 //Get the ancestor of node "u"
 //which is "dis" distance above.
-int get(int u, int dis){
+int getAncestor(int u, int dis){
     dis = lvl[u] - dis;
     int i, lg = 0;
     for(; (1<<lg) <= lvl[u]; lg++); lg--;
