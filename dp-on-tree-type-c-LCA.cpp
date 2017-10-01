@@ -28,15 +28,13 @@ vi g[N];
 const int LG = 20;
 //LCA begins
 //1 based index
-int a[N], lvl[N], P[N][LG], sz[N];
+int a[N], lvl[N], P[N][LG];
 void dfs(int u, int par){
-    sz[u] = 1;
     lvl[u] = 1+lvl[par];
     P[u][0] = par;
 	for(int v:g[u]){
 		if (v == par) continue;
 		dfs(v, u);
-		sz[u] += sz[v];
 	}
 }
 
