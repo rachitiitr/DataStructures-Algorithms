@@ -90,13 +90,13 @@ int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	int i,n,q, m, j;
+	int i, n, q, m, j;
 	int u, v;
-	cin>>n>>m;
+	cin >> n >> m;
 	fo(i, n-1){
-        cin>>u>>v;
-        g[u].pb(v);
-        g[v].pb(u);
+            cin>>u>>v;
+            g[u].pb(v);
+            g[v].pb(u);
 	}
 
 	fo(i, LG) fo(j, n+1) P[j][i] = -1;
