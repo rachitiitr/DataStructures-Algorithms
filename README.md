@@ -16,7 +16,7 @@ CodeForces ► http://www.codeforces.com/profile/rachitjain
 CodeChef ► http://www.codechef.com/users/rachitiitr         
 
 # About Me
-I am Rachit Jain, currently working as Software Enginner in Microsoft.        
+I am Rachit Jain, currently working as Software Engineer in Microsoft.        
 I have graduated from IIT Roorkee in 2017.       
 I have done my majors in Electrical Engineering,       
 and minors in Computer Science Engineering.        
