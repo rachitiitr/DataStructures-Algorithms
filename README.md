@@ -29,5 +29,7 @@ I like teaching, and hence launched my YouTube channel recently.
 2. IITian      
 3. Despite majors in Electrical Engineering:      
   a. Cracked job interviews for Microsoft, Directi.      
-  b. Codeforces Rating: 2018 (DIV 1)      
-  c. Google APAC Global Rank: #25 (Round D, 2017)      
+  b. Google APAC Global Rank: #25 (Round D, 2017)    
+  c. Codeforces Rating: 2018 (DIV 1)      
+  d. Did internships in Flipkart(III Year) and Grofers(II Year).    
+  e. Launched YouTube Channel for DS, Algos for teaching.
