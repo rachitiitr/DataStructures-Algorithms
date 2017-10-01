@@ -25,7 +25,7 @@ I love to explore and learn new algorithms and programming techniques.
 I like teaching, and hence launched my YouTube channel recently.      
 
 # Achievements 
-1. JEE Mains Rank:  #69      
+1. JEE Mains All India Rank:  #69 among 1.4 million candidates          
 2. IITian      
 3. Despite majors in Electrical Engineering:      
   a. Cracked job interviews for Microsoft, Directi.      
