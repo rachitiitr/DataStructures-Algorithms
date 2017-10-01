@@ -91,8 +91,8 @@ int main()
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	int i,n,q, m, j;
-    int u, v;
-    cin>>n>>m;
+	int u, v;
+	cin>>n>>m;
 	fo(i, n-1){
         cin>>u>>v;
         g[u].pb(v);
