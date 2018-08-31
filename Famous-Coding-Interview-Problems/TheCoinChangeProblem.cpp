@@ -11,7 +11,7 @@ int vis[N][N], dp[N][N];
 int ways(int pos, int S) {
 	if(pos == n) return S == 0;
 	int &ans = dp[pos][S];
-  if(vis[pos][S]) return ans; vis[pos][S] = 1, ans = 0;
+  	if(vis[pos][S]) return ans; vis[pos][S] = 1, ans = 0;
 	int times = 0;
 	while(times*A[pos] <= S) ans += ways(pos+1, S-times*A[pos]), times++;
 	return ans;
@@ -20,9 +20,9 @@ int ways(int pos, int S) {
 //Faster than ways function as it causes only two transitions
 int fasterWays(int pos, int S) {
 	if(pos == n) return S == 0;
-  if(S < 0) return 0;
+ 	 if(S < 0) return 0;
 	int &ans = dp[pos][S];
-  if(vis[pos][S]) return ans; vis[pos][S] = 1, ans = 0;
+ 	 if(vis[pos][S]) return ans; vis[pos][S] = 1, ans = 0;
 	ans = ways(pos, S-A[pos]) + ways(pos+1, S);
 	return ans;
 }
