@@ -1,3 +1,4 @@
+//Given the list of M transacations b/w N people, find out the minimum number of transactions required to settle it up!
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e6;
@@ -29,7 +30,7 @@ int main()
         rich -= amount;
         
         if (poor) S.insert(make_tuple(poor, x));
-        if (rich) S.insert(make_tuple(rich, y)~);
+        if (rich) S.insert(make_tuple(rich, y));
     }
     
     cout << count << endl;
