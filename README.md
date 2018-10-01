@@ -33,3 +33,4 @@ I like teaching, and hence launched my YouTube channel recently.
   c. Codeforces Rating: 2018 (DIV 1)      
   d. Did internships in Flipkart(III Year) and Grofers(II Year).    
   e. Launched YouTube Channel for DS, Algos for teaching.
+ 
