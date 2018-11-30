@@ -8,7 +8,7 @@ I make Video Lectures on YouTube for
 6. Logical Reasoning
 
 Youtube Channel ► http://www.youtube.com/c/RachitJain        
-Facebook Page ► http://fb.me/LearningAlgorithmsWithRachitJain      
+Facebook Page ► http://fb.me/AlgorithmsWithRachitJain      
 Blog ► http://rachitiitr.blogspot.com      
 
 # My Profile Links      
