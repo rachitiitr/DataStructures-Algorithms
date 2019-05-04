@@ -81,7 +81,7 @@ int main() {
 		}
 		
 		for(i = 0; i < n; i++) if(ign[i] == 1) count++;
-    if(count == n) flag = 1;
+		if(count == n) flag = 1;
 		if(flag == -1) cout << "IMPOSSIBLE\n";
 		else cout << ans << "\n";
 	}
