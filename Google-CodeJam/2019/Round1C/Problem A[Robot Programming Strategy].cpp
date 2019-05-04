@@ -51,8 +51,7 @@ int main() {
 		string ans = "";
 		for( j = 0; j < 500; j++) {
 			set<char> choices = {R, P, S};
-			set<char> want = {};
-		
+			set<char> want = {};	
 			for( i = 0; i < n; i++) {
 				if(ign[i]) continue;
 				char c = M[i][j];
