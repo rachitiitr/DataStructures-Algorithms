@@ -13,7 +13,7 @@ struct node{
 unordered_map<node*, int> cnt;
 
 void traversal_trick(node *root) {
-    //postorder
+    //inorder
     stack<node*> S;
     
     S.push(root);
@@ -21,8 +21,8 @@ void traversal_trick(node *root) {
         node* cur = S.top();
         if(cur == NULL) { S.pop(); continue; }
         if (cnt[cur] == 0) S.push(cur->left);
-        else if (cnt[cur] == 1) S.push(cur->right);
-        else if (cnt[cur] == 2) cout << cur->val << " " ;
+        else if (cnt[cur] == 1) cout << cur->val << " " ;
+        else if (cnt[cur] == 2) S.push(cur->right);
         else S.pop();
         cnt[cur]++;
     }
