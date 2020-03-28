@@ -15,7 +15,7 @@ public:
 class Facebook: public SocialWebsite{
 private:
     string fbPassword;
-    
+
     void secret(){
         cout << "The Facebook password is: " << fbPassword << endl;
         cout << "Its risky, but its fine to print here as it's a private function\n";
@@ -28,8 +28,8 @@ public:
 
 int main()
 {
-    Facebook f("Rachit95@fb");
-    
+    Facebook f("Rachit95@fb"); // using the oops concept
+
     SocialWebsite *ptr = &f;
     ptr->secret();
 }
