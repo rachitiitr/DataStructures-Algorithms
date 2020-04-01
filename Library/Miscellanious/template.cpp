@@ -1,4 +1,5 @@
-sing namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 #define gc getchar_unlocked
 #define fo(i,n) for(i=0;i<n;i++)
 #define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
@@ -39,6 +40,8 @@ vi g[N];
 int a[N];
 
 int main() {
+    ios_base::sync_with_stdio(0);
+    int t, i, j, k, p, q, r, x, y, u, v, n, m;
 
     return 0;
 }
