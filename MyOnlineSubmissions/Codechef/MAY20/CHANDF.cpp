@@ -53,7 +53,7 @@ public:
 } bitX, bitY;
 
 vector<ll> getValidZValues(ll &L, ll &R) {
-    vector<ll> validZ = {L, R}; // L and R are always valid Z values we should handle
+    vector<ll> Zcandidates = {L, R}; // L and R are always valid Z values we should handle
     Bit bitL(L);
     Bit bitR(R);
     int k = 0;
@@ -71,7 +71,7 @@ vector<ll> getValidZValues(ll &L, ll &R) {
                 z.set(i, 1); // maximize F(X,Y,Z)
             }
         }
-        validZ.push_back(z.toInt());
+        Zcandidates.push_back(z.toInt());
     }
     for(int r = k+1; r < 40; r++) {
         if(bitR.get(r) != 1) continue;
@@ -85,11 +85,11 @@ vector<ll> getValidZValues(ll &L, ll &R) {
                 z.set(i, 1);
             }
         }
-        validZ.push_back(z.toInt());
+        Zcandidates.push_back(z.toInt());
     }
 
-    sort(validZ.begin(), validZ.end());
-    return validZ;
+    sort(Zcandidates.begin(), Zcandidates.end());
+    return Zcandidates;
 }
 
 int main() {
