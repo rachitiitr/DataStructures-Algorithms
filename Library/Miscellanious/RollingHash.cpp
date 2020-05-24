@@ -20,7 +20,7 @@ struct RollingHash {
     #define sz(x) ((int)x.size())
 	vector<ModBasedHashInt> hash, power;
 	HashInt C;
-	RollingHash(string& str, HashInt Co) : hash(sz(str)+1), power(hash) {
+	RollingHash(string& str, HashInt Co) : hash(sz(str)+1, 0), power(hash) {
 		C = Co;
 		power[0] = 1;
 		for(int i=0; i<sz(str); i++) {
