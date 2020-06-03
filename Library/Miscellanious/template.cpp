@@ -77,8 +77,9 @@ void ipgraph(int n, int m){
 	int i, u, v;
 	while(m--){
 		cin>>u>>v;
-		g[u-1].pb(v-1);
-		g[v-1].pb(u-1);
+    u--, v--;
+		g[u].pb(v);
+		g[v].pb(u);
 	}
 }
 
