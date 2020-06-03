@@ -35,7 +35,7 @@ int rng(int lim) {
 	return uid(rang);
 }
 int mpow(int base, int exp); 
-void ipgraph(int m);
+void ipgraph(int n, int m);
 void dfs(int u, int par);
 
 const int mod = 1'000'000'007;
