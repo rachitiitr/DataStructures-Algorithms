@@ -61,7 +61,7 @@ void solve() {
     // print sum
     int sum = 0;
     fo(i, n) fo(j, n) sum += a[i][j];
-    pi(sum);
+    deb(sum);
   }
 
   // Fo demo - works in both direction (0 to 100) as well as (100, 0)
@@ -77,7 +77,16 @@ void solve() {
   {
     // (a * b) % mod    ==     ( (a%mod) * (b%mod) ) % mod
     int mpow_result = mpow(2, 1000);
-    pi(mpow_result);
+    deb(mpow_result);
+  }
+
+  // vector, pair 
+  {
+	vpii ans = {{1, 1}, {-3, 9}, {10, 100}, {6, 36}};
+	sortall(ans);
+
+	for(pii x: ans) printf("[%d, %d]", x.F, x.S);
+	printf("\n");
   }
 }
 
