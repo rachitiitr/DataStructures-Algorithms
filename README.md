@@ -1,11 +1,13 @@
 # My YouTube Channel
-I make Video Lectures on YouTube for 
+I make Educational Video Lectures on YouTube for 
 1. Data Structures
 2. Algorithms
 3. Interview Tips for Software Engineering Jobs
 4. Math Puzzles
 5. Brain Teasers
 6. Logical Reasoning
+And Many More ...
+Subscribe to my channel to get amazing educational videos.
 
 Youtube Channel ► http://www.youtube.com/c/RachitJain        
 Facebook Page ► http://fb.me/AlgorithmsWithRachitJain      
