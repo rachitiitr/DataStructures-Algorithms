@@ -16,12 +16,12 @@ CodeForces ► http://www.codeforces.com/profile/rachitjain
 CodeChef ► http://www.codechef.com/users/rachitiitr         
 
 # About Me
-I am Rachit Jain, currently working as Software Engineer in Microsoft.        
+Hello I am Rachit Jain, currently working as Software Engineer in Microsoft.        
 I have graduated from IIT Roorkee in 2017.       
 I have done my majors in Electrical Engineering,       
 and minors in Computer Science Engineering.        
 Competitive Programming is my hobby, as I like to keep my mind sharp.      
-I love to explore and learn new algorithms and programming techniques.      
+I love to explores and learn new algorithms and programming techniques.      
 I like teaching, and hence launched my YouTube channel recently.      
 
 # Achievements 
