@@ -6,6 +6,7 @@ I make Video Lectures on YouTube for
 4. Math Puzzles
 5. Brain Teasers
 6. Logical Reasoning
+7. Motivational speaker
 
 Youtube Channel ► http://www.youtube.com/c/RachitJain        
 Facebook Page ► http://fb.me/AlgorithmsWithRachitJain      
