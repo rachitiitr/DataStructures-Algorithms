@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+ll findDuplicateElement(ll a[],ll n)
+{
+        ll i=a[0],j=a[0];
+        do
+        {
+            i=a[i];
+            j=a[a[j]];
+        }while(i!=j);
+        
+        j=a[0];
+        while(i!=j)
+        {
+            j=a[j];
+            i=a[i];
+        }
+        return i;
+}
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+  ll n,i;
+  cin>>n;
+  ll a[n];
+  for(i=0;i<n;i++)cin>>a[i];
+  
+  cout<<findDuplicateElement(a,n)<<endl;
+  
+	return 0;
+}
