@@ -20,6 +20,9 @@ using namespace std;
 #define clr(x) memset(x, 0, sizeof(x))
 #define sortall(x) sort(all(x))
 #define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
+#define sz(a) int((a).size())
+#define present(c,x) (c.find(x) != c.end())
+#define cpresent(c,x) (find(all(c),x) != c.end())
 #define PI 3.1415926535897932384626
 typedef pair<int, int>	pii;
 typedef pair<ll, ll>	pl;
