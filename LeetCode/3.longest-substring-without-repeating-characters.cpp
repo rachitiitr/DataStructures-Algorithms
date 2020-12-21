@@ -9,7 +9,7 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
         int n = s.size();
-        if(s.size()==0)return 0;
+        if(n==0)return 0;
         int i,j;
         i=0, j=0;
         vector<int> cnt(326, 0);
