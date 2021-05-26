@@ -7,15 +7,13 @@ public:
         int maxIndexReachable = nums[0];
         int ans = 1, lim = nums[0]; 
         
-        for(int i = 1; i < n; i++)
-        {
+        for(int i = 1; i < n; i++) {
             if(i > lim) {
                 ans++;
                 lim = maxIndexReachable;
             }
             maxIndexReachable = max(maxIndexReachable, i+nums[i]);
         }
-        
         return ans;
     }
 };
