@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define boost ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define gc getchar_unlocked
 #define fo(i,n) for(i=0;i<n;i++)
 #define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
