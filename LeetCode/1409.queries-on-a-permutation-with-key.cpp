@@ -1,28 +1,15 @@
 class Solution {
-public:
-    vector<int> processQueries(vector<int>& queries, int m) {
-        unordered_map<int, int> pos, rev_pos; // pos[3] - 10 => 3 occurs at index 10
-        for(int i = 1; i <= m; i++) {
-            pos[i] = i-1, rev_pos[i-1] = i;
-        }
-        
-        vector<int> ans = {};
-        for(int q: queries) {
-            ans.push_back(pos[q]);
-            // increment the pos of all nos from 0 to pos[q]-1
-            for (int i = pos[q]-1 ; i >= 0; i--) {
-                int cur = rev_pos[i];
-                pos[cur] = i+1; // shift to right side
-                rev_pos[i+1] = cur;
-            }
-            pos[q] = 0;
-            rev_pos[0] = q;
+   public:
+    vector<int> processQueries(vector<int>& queries, int m)
+    {
+        vector<int> ans, P(m);
+        int n = queries.size();
+        iota(P.begin(), P.end(), 1);  //  initialize P
+        for (int i = 0; i < n; i++) {
+            auto it = find(P.begin(), P.end(), queries[i]);  //  find location of query in P
+            ans.push_back(it - P.begin());                   //  push index of the query in ans vector
+            rotate(P.begin(), it, it + 1);                   //  move the query at the beginning of P
         }
         return ans;
     }
 };
-// 1,2,3,4,5
-// 3,1,2,4,5
-
-// _ _ _ _ _ _ _ _ _ _ _ 
-          // ^ 
