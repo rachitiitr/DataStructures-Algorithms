@@ -5,19 +5,20 @@
  */
 
 // @lc code=start
-#include<bits/stdc++.h>
 class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> id;
-        for(int i = 0; i < nums.size(); i++) {
-            int make = target - nums[i];
-            if(id[make]) {
-                return {id[make]-1, i};
-            }
-            id[nums[i]] = i+1;
+     public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer>map =new HashMap<>();
+        
+        for(int i=0; i<nums.length; i++){
+            map.put(nums[i],i);
         }
-        return {-1, -1};
+       for(int i=0; i<nums.length; i++){
+           int diff = target - nums[i];
+           if(map.containsKey(diff) && map.get(diff)!=i){
+              return new int[] {i,map.get(diff)};
+           }
+       } 
+     throw new IllegalArgumentException("No two sum solution");
     }
 };
 // @lc code=end
