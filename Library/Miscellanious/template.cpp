@@ -22,11 +22,11 @@ using namespace std;
 #define tr(it, a) for(auto it = a.begin(); it != a.end(); it++)
 #define PI 3.1415926535897932384626
 typedef pair<int, int>	pii;
-typedef pair<ll, ll>	pl;
+typedef pair<ll, ll>	pll;
 typedef vector<int>		vi;
 typedef vector<ll>		vl;
 typedef vector<pii>		vpii;
-typedef vector<pl>		vpl;
+typedef vector<pll>		vpl;
 typedef vector<vi>		vvi;
 typedef vector<vl>		vvl;
 mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());
