@@ -1,0 +1,202 @@
+#include<bits/stdc++.h>
+#include <vector>
+using namespace std;
+
+
+#define f(i,n)          for(int i=0;i<n;i++)
+#define FOR(i,a,b)      for(int i=a;i<b;i++)
+#define ff              first
+#define ss              second
+#define int             long long
+#define pb              push_back
+#define mp              make_pair
+#define pii             pair<int,int>
+#define vi              vector<int>
+#define mii             map<int,int>
+#define pqb             priority_queue<int>
+#define pqs             priority_queue<int,vi,greater<int> >
+#define setbits(x)      __builtin_popcountll(x)
+#define zrobits(x)      __builtin_ctzll(x)
+#define mod             1000000007
+#define inf             1e18
+#define ps(x,y)         fixed<<setprecision(y)<<x  //works with float
+#define mk(arr,n,type)  type *arr=new type[n];
+#define w(x)            int x; cin>>x; while(x--)
+#define all(x)          x.begin(),x.end()
+#define rt              return
+#define br              break
+#define ct              continue
+#define elif            else if
+#define arrin(a,n)      for(int i=0;i<n;i++)cin>>a[i]
+#define arrout(a,n)     for(int i=0;i<n;i++)cout<<a[i]<<" "
+mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+
+
+
+void c_p_c()
+{
+  ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+  freopen("input.txt", "r", stdin);
+  freopen("out.txt", "w", stdout);
+#endif
+}
+
+int power(int a, int x) {
+
+  int temp = a;
+  int ans = 1;
+// cout<<temp;
+  while (x) {
+    if (x & 1) {
+      ans = (ans * temp) % mod;
+      // cout<<ans;
+    }
+
+    temp = (temp * temp) % mod;
+    //cout<<temp<<" ";
+    x >>= 1;
+    //cout<<x<<" ";
+
+
+
+  }
+  //cout << ans;
+
+  return ans % mod;
+}
+// bool cmp(vector<pair<int, int>> a, vector<pair<int, int>> b) {
+//   return a.second < b.second;
+// }
+
+
+int getMinDifferenceSubsetSumArrayPartition(int arr[], int n) {
+  if (n == 0) {
+    return -1;
+  }
+
+  int sumOfArray = 0;
+  for (int i = 0; i < n; i++) {
+    sumOfArray = sumOfArray + arr[i];
+  }
+
+  int sum = sumOfArray / 2;
+
+  // bool[][] mat = new boolean[n][sum + 1];
+  bool mat[n][sum + 1];
+
+
+  for (int i = 0; i < n; i++) {
+    mat[i][0] = true;
+  }
+
+  for (int j = 0; j <= sum; j++) {
+    if (j == arr[0]) {
+      mat[0][j] = true;
+    }
+  }
+
+  for (int i = 1; i < n; i++) {
+    for (int j = 1; j <= sum; j++) {
+
+      if (mat[i - 1][j]) {
+        mat[i][j] = true;
+      } else {
+        if (j >= arr[i]) {
+          mat[i][j] = mat[i - 1][j - arr[i]];
+        }
+      }
+    }
+  }
+
+  int lastRow = n - 1;
+  int firstPartitionSum = -1;
+
+  for (int j = sum; j >= 0; j--) {
+    if (mat[lastRow][j]) {
+      firstPartitionSum = j;
+      break;
+    }
+  }
+
+  int secondPartitionSum = sumOfArray - firstPartitionSum;
+
+  return abs(firstPartitionSum - secondPartitionSum);
+
+}
+
+
+
+
+
+int32_t main()
+{
+  //c_p_c();
+  string a, b; cin >> a >> b;
+  int m = a.length();
+  int n = b.length();
+  int arr[m + 1][n + 1];
+  f(i, m+1) {
+    arr[i][0] = 0;
+  }
+  f(i, n+1) {
+    arr[0][i] = 0;
+  }
+  a.insert(0, "0");
+  b.insert(0, "0");
+
+  string ans="";
+
+  for (int i = 1; i <= m; i++) {
+    for (int j = 1; j <= n; j++) {
+
+      if (a.at(i) == b.at(j)) {
+        arr[i][j] = arr[i - 1][j - 1] + 1;
+        // ans += a.at(i);
+      }
+
+      else {
+        arr[i][j] = max(arr[i - 1][j], arr[i][j - 1]);
+      }
+
+
+
+    }
+  }
+  
+ 
+  
+  int len= arr[m][n];
+  int x=n;
+  int y=m;
+
+  while(x>0 and y>0){
+      if(a.at(y)==b.at(x))
+      {
+          
+          char sub=a.at(y);
+          ans+=sub;
+          y--;
+          x--;
+      }
+      else if(arr[y-1][x]>arr[y][x-1]){
+          y--;
+      }
+      else{
+          x--;
+      }
+  }
+  reverse(ans.begin(),ans.end());
+  cout<<ans;
+  }
+
+
+
+
+
+
+
+
+
+
