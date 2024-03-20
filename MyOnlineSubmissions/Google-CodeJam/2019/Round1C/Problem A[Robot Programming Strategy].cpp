@@ -13,9 +13,9 @@ char winner(set<char> a)
 	char x = *a.begin();
 	char y = *a.rbegin();
 	string z = ""; z += x; z += y;
-	if (z == "PR") return R;
-	if (z == "PS") return P;
-	if (z == "RS") return S;
+	if (z == "PR") return P;
+	if (z == "PS") return S;
+	if (z == "RS") return R;
 }
 
 int main() {
